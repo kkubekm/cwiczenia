@@ -1,0 +1,18 @@
+package pl.kkubek;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Podaj temperaturę:");
+        Scanner scanner1 = new Scanner(System.in);
+        int temperature = scanner1.nextInt();
+        if (temperature > 0) {
+            System.out.println("Temperatura jest wyższa od zera");
+        } else if (temperature < 0) {
+            System.out.println("Temperatura jest niższa od zera");
+        } else {
+            System.out.println("Temperatura jest równa 0");
+        }
+    }
+}
